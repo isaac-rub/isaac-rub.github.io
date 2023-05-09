@@ -1,8 +1,12 @@
 body {
-  color: #fff;
-	margin: 0;
-	padding: 0;
-	height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+ 
+    color: #fff;
+	
+	
 	overflow: hidden;
 	--sz: 5px; /*** size ***/
 	--sp: 10s; /*** speed ***/
@@ -12,8 +16,7 @@ body {
 	--b4: #0c0b0ae0;
 	--c1: #e399ff;
 	--ts: 50%/calc(var(--sz) * 17.5) calc(var(--sz) * 29.5);
-}
-div{
+
 	height: 100vh;
 	background:
 		/* black shadows */
@@ -67,93 +70,25 @@ div{
 	100% { filter: hue-rotate(360deg); }
 }
 
-.hero {
-  height: 83vh;
-  
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  position: relative;
-}
-.hero .info-content {
-  grid-column: 1 / 1fr;
-  grid-row: 1 / 1fr;
-  color: #fff;
-  z-index: 1;
-}
-.hero .info-content h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.8em;
-}
-.hero .info-content h1 {
-  font-weight: 900;
-  font-size: 5em;
-  color: skyblue;
-}
-.hero .info-content p {
-  font-family: 'Montserrat', sans-serif;
-}
-.hero .info-content .btn {
-  font-size: 1em;
-  color:#fff;
-  background: none;
-  padding: 10px 20px;
-  border-radius: 30px;
-  border:1px solid rgb(149, 232, 253);
-  margin-top: 10px;
-}
-.hero .info-content .btn:hover {
-  background-color: rgb(255, 255, 255);
-  color:#181818;
-}
-
-
-
-    .navbar {
-      background-color: rgb(158, 200, 210);
-      display: grid;
-      grid-template-columns: repeat(8, 1fr);
-      align-items: center;
-    }
-
-.navbar .logo {
-      height: 60px;
-      width: 60px;
-      grid-column: 2 / 3;
-      border-radius: 5%;
-    }
-    .navbar .menu {
-      grid-column: 4 / 7;
-      display: flex;
-    }
-    .navbar ul li {
-      margin-right: 3em;
-      list-style: none;
-    }
-    .navbar a {
-      text-decoration: none;
-      color: rgb(0, 0, 0);
-      cursor: pointer;
-    }
-    .navbar a:hover {
-      color: #fff;
-    }   
-    
-	input,
+ input,
     textarea {
-		
-    width: 30%;
+    width: 100%;
     padding: 5px;
     outline: none;
   }
+
   label {
     line-height: 1.9rem;
   }
-  form{
 
-	display: grid;	
-	grid-template-columns:3 /5 ;
-	grid-template-rows: 4/6 ;
+  input[type="submit"] {
+   transform: translate(2.2%);
+   padding: 3px;
+   margin-top: 0.6rem;
+   font-family: cursive;
+   font-weight: bold;
   }
 
+ fieldset {
+   padding: 20px 40px;
+ }
