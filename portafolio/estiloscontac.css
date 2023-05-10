@@ -17,7 +17,8 @@ body {
 	--c1: #e399ff;
 	--ts: 50%/calc(var(--sz) * 17.5) calc(var(--sz) * 29.5);
 
-	height: 100vh;
+	height: 100vh;}
+	div{
 	background:
 		/* black shadows */
 		radial-gradient(circle at 50% 50%, var(--b4) calc(var(--sz) * 1), #fff0 calc(var(--sz) * 8)) var(--ts),
@@ -92,3 +93,32 @@ body {
  fieldset {
    padding: 20px 40px;
  }
+ .navbar {
+	background-color: rgb(158, 200, 210);
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	align-items: center;
+  }
+
+.navbar .logo {
+	height: 60px;
+	width: 60px;
+	grid-column: 2 / 3;
+	border-radius: 5%;
+  }
+  .navbar .menu {
+	grid-column: 4 / 7;
+	display: flex;
+  }
+  .navbar ul li {
+	margin-right: 3em;
+	list-style: none;
+  }
+  .navbar a {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	cursor: pointer;
+  }
+  .navbar a:hover {
+	color: #fff;
+  }  
