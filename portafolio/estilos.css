@@ -159,4 +159,20 @@ div{
     align-items: center;
     flex-direction: column;
   }
+footer{
+  background-color:   rgb(158, 200, 210);
+  display: flex;
+ flex-wrap: nowrap;
+  align-items: center;
+  margin: 0;
+	padding: 0;
+	height: 100vh;
 
+}
+
+ 
+@media screen and (max-width: 600px) {
+  body {
+    
+  }
+}
